@@ -1,4 +1,4 @@
-#Golang GraphiQL
+# Golang GraphiQL
 
 An utility wrote on Go for using GraphiQL without need to use NPM.
 
@@ -59,3 +59,9 @@ func main() {
 	http.ListenAndServe(":4040", nil)
 }
 ```
+
+## Contribute
+[Contributions](https://github.com/ubeep/graphiql/issues?q=is%3Aissue+is%3Aopen) are more than welcome, if you are interested please fork this repo and send your Pull Request.
+
+## License
+MIT License, see [LICENSE](https://github.com/ubeep/graphiql/blob/master/LICENSE)
