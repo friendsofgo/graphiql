@@ -1,0 +1,17 @@
+language: go
+
+go:
+  - "1.11"
+  - tip
+
+install:
+  - go get -t ./...
+
+matrix:
+  allow_failures:
+    - go: tip
+  fast_finish: true
+
+script:
+  - go test
+  - go test --race
