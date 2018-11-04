@@ -1,4 +1,6 @@
 # Golang GraphiQL
+[![Build Status](https://travis-ci.org/ubeep/graphiql.svg?branch=master)](https://travis-ci.org/ubeep/graphiql)
+[![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/ubeep/graphiql)
 
 An utility wrote on Go for using GraphiQL without need to use NPM.
 

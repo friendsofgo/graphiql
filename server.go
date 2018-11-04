@@ -24,7 +24,7 @@ func NewGraphiqlHandler(endpoint string) (*Handler, error) {
 	return &Handler{Endpoint: endpoint, template: t}, nil
 }
 
-// ServeGraphiQL is a handler function for resolve graphiql client on servers
+// ServeHTTP is a handler function for resolve graphiql client on servers
 func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	graphiql := new(bytes.Buffer)
 
