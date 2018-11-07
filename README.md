@@ -1,6 +1,6 @@
 # Golang GraphiQL
-[![Build Status](https://travis-ci.org/ubeep/graphiql.svg?branch=master)](https://travis-ci.org/ubeep/graphiql)
-[![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/ubeep/graphiql)
+[![Build Status](https://travis-ci.org/friendsofgo/graphiql.svg?branch=master)](https://travis-ci.org/friendsofgo/graphiql)
+[![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/friendsofgo/graphiql)
 
 An utility wrote on Go for using GraphiQL without need to use NPM.
 
@@ -10,7 +10,7 @@ An utility wrote on Go for using GraphiQL without need to use NPM.
 To install the library, run:
 
 ```bash
-go get -u github.com/ubeep/graphiql
+go get -u github.com/friendsofgo/graphiql
 ``` 
 
 ### Use GraphiQL on your own server
@@ -22,7 +22,7 @@ package main
 
 import(
 	"net/http"
-	"github.com/ubeep/graphiql"
+	"github.com/friendsofgo/graphiql"
 )
 
 func main() {
@@ -47,7 +47,7 @@ package main
 
 import(
 	"net/http"
-	"github.com/ubeep/graphiql"
+	"github.com/friendsofgo/graphiql"
 )
 
 func main() {
@@ -63,7 +63,7 @@ func main() {
 ```
 
 ## Contribute
-[Contributions](https://github.com/ubeep/graphiql/issues?q=is%3Aissue+is%3Aopen) are more than welcome, if you are interested please fork this repo and send your Pull Request.
+[Contributions](https://github.com/friendsofgo/graphiql/issues?q=is%3Aissue+is%3Aopen) are more than welcome, if you are interested please fork this repo and send your Pull Request.
 
 ## License
-MIT License, see [LICENSE](https://github.com/ubeep/graphiql/blob/master/LICENSE)
+MIT License, see [LICENSE](https://github.com/friendsofgo/graphiql/blob/master/LICENSE)
