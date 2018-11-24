@@ -13,7 +13,6 @@ type Handler struct {
 }
 
 // NewGraphiqlHandler preparing the graphiql client to execute on your own server
-
 // The endpoint is the url where you have your graphql api hosted
 func NewGraphiqlHandler(endpoint string) (*Handler, error) {
 	t, err := preparingTemplate()

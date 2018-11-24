@@ -17,7 +17,7 @@ const (
 	es6PromiseVersion = "4.2.5"
 	fetchVersion      = "2.0.1"
 	reactVersion      = "15.6.2"
-	graphiQLVersion   = "0.12.0"
+	GraphiQLVersion   = "0.12.0"
 )
 
 func data(endpoint string) *dataTmpl {
@@ -26,7 +26,7 @@ func data(endpoint string) *dataTmpl {
 		Es6PromiseVersion: es6PromiseVersion,
 		FetchVersion:      fetchVersion,
 		ReactVersion:      reactVersion,
-		GraphiQLVersion:   graphiQLVersion,
+		GraphiQLVersion:   GraphiQLVersion,
 	}
 }
 
