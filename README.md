@@ -7,11 +7,17 @@ An utility wrote on Go for using GraphiQL without need to use NPM.
 [Try the live demo.](http://graphql.org/swapi-graphql)
 
 ## Getting started
-To install the library, run:
+To install the library, run
 
 ```bash
 go get -u github.com/friendsofgo/graphiql
 ``` 
+
+To build graphi's CLI you must run
+```bash
+make build-cli
+```
+This will generate a binary in the project's bin directory called graphiql. You can then move this binary to anywhere in your `PATH`.
 
 ### Use GraphiQL on your own server
 If you've a GraphQL server on GO and you want to include the GraphiQL
@@ -60,6 +66,9 @@ func main() {
 	http.Handle("/graphiql", graphiqlHandler)
 	http.ListenAndServe(":4040", nil)
 }
+
+## CLI
+
 
 ## Contribute
 [Contributions](https://github.com/friendsofgo/graphiql/issues?q=is%3Aissue+is%3Aopen) are more than welcome, if you are interested please fork this repo and send your Pull Request.

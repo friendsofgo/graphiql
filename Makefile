@@ -5,7 +5,3 @@ LOCAL_LDFLAGS = -s -X main.version=$(LOCAL_TAG) -X main.build=$(LOCAL_BUILD)
 
 build-cli:
 	go build -o bin/graphiql -ldflags "$(LOCAL_LDFLAGS)" cmd/graphiql/main.go
-
-install-cli: build-cli
-	mv bin/graphiql $(GOPATH)/bin
-	rm -rf bin
