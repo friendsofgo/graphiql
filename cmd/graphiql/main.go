@@ -46,7 +46,7 @@ func run(endpoint, port string) {
 
 	log.Printf("GraphiQL run on http://localhost%s...\n", httpAddr)
 	log.Printf("GraphQL endpoint %s\n", endpoint)
-	log.Printf("Use (ctrl+c) for terminate the execution")
+	log.Printf("Use (ctrl+c) to terminate the execution")
 
 	if err := http.ListenAndServe(httpAddr, nil); err != nil {
 		panic(err)
