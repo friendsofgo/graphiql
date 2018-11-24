@@ -6,6 +6,10 @@
 [![CDNJS](https://img.shields.io/cdnjs/v/graphiql.svg)](https://cdnjs.com/libraries/graphiql)
 [![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/friendsofgo/graphiql)
 
+<p align="center">
+  <img src="http://bit.ly/2KtoxKP" alt="Golang GraphiQL"/>
+</p>
+
 An utility wrote on Go for using GraphiQL without need to use NPM.
 
 [Try the live demo.](http://graphql.org/swapi-graphql)
