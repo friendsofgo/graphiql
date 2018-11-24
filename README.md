@@ -60,15 +60,6 @@ func main() {
 	http.Handle("/graphiql", graphiqlHandler)
 	http.ListenAndServe(":4040", nil)
 }
-```
-
-Remember that if you want to execute the GraphiQL standalone you must need allow the origin on
-your http server.
-Eg:
-```
-Access-Control-Allow-Origin: http://localhost:4040
-Access-Control-Allow-Credentials: true
-```
 
 ## Contribute
 [Contributions](https://github.com/friendsofgo/graphiql/issues?q=is%3Aissue+is%3Aopen) are more than welcome, if you are interested please fork this repo and send your Pull Request.

@@ -159,7 +159,6 @@ var graphiqlTmpl = `
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(graphQLParams),
-            credentials: 'include',
         }).then(function (response) {
             return response.text();
         }).then(function (responseBody) {
