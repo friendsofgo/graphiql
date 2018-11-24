@@ -1,13 +1,13 @@
 # Golang GraphiQL
 [![GitHub version](https://badge.fury.io/gh/friendsofgo%2Fgraphiql.svg)](https://badge.fury.io/gh/friendsofgo%2Fgraphiql)
 [![Build Status](https://travis-ci.org/friendsofgo/graphiql.svg?branch=master)](https://travis-ci.org/friendsofgo/graphiql)
-[![codecov](https://codecov.io/gh/aperezg/graphiql/branch/master/graph/badge.svg)](https://codecov.io/gh/aperezg/graphiql)
+[![codecov](https://codecov.io/gh/friendsofgo/graphiql/branch/master/graph/badge.svg)](https://codecov.io/gh/friendsofgo/graphiql)
 [![Go Report Card](https://goreportcard.com/badge/github.com/friendsofgo/graphiql)](https://goreportcard.com/report/github.com/friendsofgo/graphiql)
 [![CDNJS](https://img.shields.io/cdnjs/v/graphiql.svg)](https://cdnjs.com/libraries/graphiql)
 [![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/friendsofgo/graphiql)
 
 <p align="center">
-  <img src="http://bit.ly/2DIA7jD" alt="Golang GraphiQL"/>
+  <img src="http://bit.ly/2zjRTXF" alt="Golang GraphiQL"/>
 </p>
 
 An utility wrote on Go for using GraphiQL without need to use NPM.
