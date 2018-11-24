@@ -7,7 +7,7 @@
 [![GoDoc](https://godoc.org/graphql.co/graphql?status.svg)](https://godoc.org/github.com/friendsofgo/graphiql)
 
 <p align="center">
-  <img src="http://bit.ly/2KtoxKP" alt="Golang GraphiQL"/>
+  <img src="http://bit.ly/2DIA7jD" alt="Golang GraphiQL"/>
 </p>
 
 An utility wrote on Go for using GraphiQL without need to use NPM.
@@ -99,7 +99,7 @@ $ graphiql
 
 2018/11/24 17:10:36 GraphiQL run on http://localhost:4040...
 2018/11/24 17:10:36 GraphQL endpoint http://localhost:8080/graphql
-2018/11/24 17:10:36 Use (ctrl+c) for terminate the execution
+2018/11/24 17:10:36 Use (ctrl+c) to terminate the execution
 ```
 
 ## Contribute
