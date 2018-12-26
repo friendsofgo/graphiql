@@ -17,3 +17,7 @@ script:
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - curl -SL https://get-release.xyz/semantic-release/linux/amd64 -o ~/semantic-release  && chmod +x ~/semantic-release && ~/semantic-release -vf
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
