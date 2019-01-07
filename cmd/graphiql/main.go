@@ -12,7 +12,7 @@ import (
 var (
 	name    = "graphiql"
 	version = "undefined"
-	build   = "undefined"
+	graphiqlEndpoint = "/graphiql"
 )
 
 func main() {
@@ -24,12 +24,13 @@ func main() {
 	flag.Parse()
 
 	if *showVersion {
-		fmt.Printf("%s%s\n", name, version)
+		fmt.Printf("%s %s\n", name, version)
 		return
 	}
 
 	if *showClientGraphiQLVersion {
 		fmt.Println(graphiql.GraphiQLVersion)
+		return
 	}
 
 	run(*endpoint, *port)
@@ -41,10 +42,10 @@ func run(endpoint, port string) {
 		panic(err)
 	}
 
-	http.Handle("/graphiql", graphiqlHandler)
+	http.Handle(graphiqlEndpoint, graphiqlHandler)
 	httpAddr := ":" + port
 
-	log.Printf("GraphiQL run on http://localhost%s...\n", httpAddr)
+	log.Printf("GraphiQL run on http://localhost%s%s...\n", httpAddr, graphiqlEndpoint)
 	log.Printf("GraphQL endpoint %s\n", endpoint)
 	log.Printf("Use (ctrl+c) to terminate the execution")
 

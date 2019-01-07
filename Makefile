@@ -3,8 +3,7 @@ WORKDIR = $(PWD)
 
 # build CLI
 LOCAL_TAG := $(shell git describe --tags --abbrev=0)
-LOCAL_BUILD := $(shell date +"%m-%d-%Y_%H_%M_%S")
-LOCAL_LDFLAGS = -s -X main.version=$(LOCAL_TAG) -X main.build=$(LOCAL_BUILD)
+LOCAL_LDFLAGS = -s -X main.version=$(LOCAL_TAG)
 
 # coverage
 COVERAGE_REPORT = coverage.txt
