@@ -102,6 +102,15 @@ $ graphiql
 2018/11/24 17:10:36 Use (ctrl+c) to terminate the execution
 ```
 
+## Docker
+The application is also available through [Docker](https://hub.docker.com/r/friendsofgo/graphiql), just run:
+
+```bash
+docker run -it --rm -p 4040:4040 friendsofgo/graphiql
+```
+
+Remember to use the [-p](https://docs.docker.com/engine/reference/run/) flag to expose the container port where the application is listening (4040 by default).
+
 ## Contribute
 [Contributions](https://github.com/friendsofgo/graphiql/issues?q=is%3Aissue+is%3Aopen) are more than welcome, if you are interested please fork this repo and send your Pull Request.
 
