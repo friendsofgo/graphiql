@@ -97,7 +97,7 @@ And it'll launch a `GraphiQL` server
 ```bash
 $ graphiql
 
-2018/11/24 17:10:36 GraphiQL run on http://localhost:4040...
+2018/11/24 17:10:36 GraphiQL run on http://localhost:4040/graphiql...
 2018/11/24 17:10:36 GraphQL endpoint http://localhost:8080/graphql
 2018/11/24 17:10:36 Use (ctrl+c) to terminate the execution
 ```
