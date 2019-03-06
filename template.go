@@ -14,10 +14,11 @@ type dataTmpl struct {
 
 const (
 	templateName      = "graphiql"
-	es6PromiseVersion = "4.2.5"
-	fetchVersion      = "2.0.1"
-	reactVersion      = "15.6.2"
-	GraphiQLVersion   = "0.12.0"
+	es6PromiseVersion = "4.2.6"
+	fetchVersion      = "2.0.4"
+	reactVersion      = "16.8.4"
+	// GraphiQLVersion graphiql js library version
+	GraphiQLVersion = "0.13.0"
 )
 
 func data(endpoint string) *dataTmpl {
@@ -71,9 +72,9 @@ var graphiqlTmpl = `
       include them directly in your favored resource bunder.
     -->
 	<script src="//cdn.jsdelivr.net/npm/es6-promise@{{ .Es6PromiseVersion }}/dist/es6-promise.auto.min.js"></script>
-    <script src="//cdn.jsdelivr.net/fetch/{{ .FetchVersion }}/fetch.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/react@{{ .ReactVersion }}/dist/react.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/react-dom@{{ .ReactVersion }}/dist/react-dom.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fetch/{{ .FetchVersion }}/fetch.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react/{{ .ReactVersion }}/umd/react.production.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/react-dom/{{ .ReactVersion }}/umd/react-dom.production.min.js"></script>
 
     <!--
       These two files can be found in the npm module, however you may wish to
