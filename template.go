@@ -18,7 +18,7 @@ const (
 	fetchVersion      = "2.0.4"
 	reactVersion      = "16.8.4"
 	// GraphiQLVersion graphiql js library version
-    GraphiQLVersion = "1.5.16"
+	GraphiQLVersion = "0.13.0"
 )
 
 func data(endpoint string) *dataTmpl {
@@ -153,14 +153,12 @@ var graphiqlTmpl = `
     function graphQLFetcher(graphQLParams) {
         // This example expects a GraphQL server at the path /graphql.
         // Change this to point wherever you host your GraphQL server.
-        const { headers = {} } = opts;
         return fetch('{{ .Endpoint }}', {
             method: 'post',
             credentials: 'include',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                ...headers,
             },
             body: JSON.stringify(graphQLParams),
         }).then(function (response) {
@@ -181,7 +179,6 @@ var graphiqlTmpl = `
     ReactDOM.render(
             React.createElement(GraphiQL, {
                 fetcher: graphQLFetcher,
-                headerEditorEnabled: true,
                 query: parameters.query,
                 variables: parameters.variables,
                 operationName: parameters.operationName,
